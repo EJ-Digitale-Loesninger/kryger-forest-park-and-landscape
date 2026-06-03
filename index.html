@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="da" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kryger - Forest, Park & Landscape | Anlægsgartner i Søborg</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="rel stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0fdf4; /* A very light, natural green */
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+        }
+        /* Custom gradient for hero section background */
+        .hero-gradient {
+            background-image: linear-gradient(to bottom right, #1d4d3e, #2e6d5e, #3a8a7a); /* Deep forest green to lighter teal */
+        }
+        /* Custom gradient for general backgrounds */
+        .bg-primary-gradient {
+            background-image: linear-gradient(to bottom right, #f0fdf4, #dcfce7); /* Very light green shades */
+        }
+        .bg-secondary-gradient {
+            background-image: linear-gradient(to top left, #f0fdf4, #e0f2f7); /* Light green to light blue */
+        }
+        .bg-dark-gradient {
+            background-image: linear-gradient(to bottom right, #0a0a0a, #1a1a1a, #2a2a2a);
+        }
+        .btn-primary {
+            @apply inline-block px-8 py-4 text-lg font-semibold rounded-full shadow-xl transition-all duration-300 ease-in-out;
+            background-image: linear-gradient(to right, #3a8a7a, #2e6d5e); /* Teal to forest green */
+            color: white;
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2), 0 5px 10px rgba(0,0,0,0.1);
+            background-image: linear-gradient(to right, #2e6d5e, #3a8a7a); /* Reverse gradient on hover */
+        }
+        .glassmorphism-nav {
+            background-color: rgba(255, 255, 255, 0.15); /* Slightly visible white for glass effect */
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        /* Custom shadow for cards to give a deeper, more premium feel */
+        .card-shadow {
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15), 0 10px 20px rgba(0,0,0,0.08);
+        }
+        .card-shadow-hover:hover {
+            box-shadow: 0 25px 50px rgba(0,0,0,0.2), 0 15px 30px rgba(0,0,0,0.12);
+        }
+    </style>
+</head>
+<body class="text-gray-800 antialiased">
+
+    <!-- Sticky Navigation Bar -->
+    <header class="fixed top-0 left-0 right-0 z-50 py-4 px-8 md:px-16 glassmorphism-nav rounded-b-3xl">
+        <nav class="container mx-auto flex justify-between items-center max-w-7xl">
+            <a href="#home" class="text-2xl md:text-3xl font-bold text-white tracking-tight drop-shadow-md">Kryger</a>
+            <ul class="hidden md:flex space-x-8">
+                <li><a href="#home" class="text-white hover:text-green-200 transition-colors duration-300 text-lg font-medium drop-shadow-md">Hjem</a></li>
+                <li><a href="#about" class="text-white hover:text-green-200 transition-colors duration-300 text-lg font-medium drop-shadow-md">Om os</a></li>
+                <li><a href="#services" class="text-white hover:text-green-200 transition-colors duration-300 text-lg font-medium drop-shadow-md">Ydelser</a></li>
+                <li><a href="#reviews" class="text-white hover:text-green-200 transition-colors duration-300 text-lg font-medium drop-shadow-md">Anmeldelser</a></li>
+                <li><a href="#contact" class="text-white hover:text-green-200 transition-colors duration-300 text-lg font-medium drop-shadow-md">Kontakt</a></li>
+            </ul>
+            <div class="md:hidden">
+                <button class="text-white focus:outline-none">
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient min-h-screen flex items-center justify-center text-center py-20 px-4 relative overflow-hidden">
+        <div class="absolute inset-0 bg-pattern opacity-5" style="background-image: url('data:image/svg+xml,%3Csvg width=\'20\' height=\'20\' viewBox=\'0 0 20 20\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'%23a7f3d0\' fill-opacity=\'0.2\' fill-rule=\'evenodd\'%3E%3Ccircle cx=\'3\' cy=\'3\' r=\'3\'/%3E%3Ccircle cx=\'13\' cy=\'13\' r=\'3\'/%3E%3C/g%3E%3C/svg%3E'); background-size: 20px 20px;"></div>
+        <div class="relative z-10 max-w-4xl mx-auto text-white">
+            <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-6 drop-shadow-2xl">
+                Din Drømmehave <br class="hidden md:block"> Skabt Med Passion
+            </h1>
+            <p class="text-xl md:text-2xl mb-10 opacity-90 drop-shadow-lg">
+                Kryger - Forest, Park and Landscape: Vi forvandler visioner til levende grønne rum.
+            </p>
+            <a href="#contact" class="btn-primary">
+                Kontakt os for et uforpligtende tilbud
+            </a>
+        </div>
+    </section>
+
+    <!-- Om os Section -->
+    <section id="about" class="bg-primary-gradient py-24 px-4 sm:px-8 lg:px-16 relative overflow-hidden">
+        <div class="container mx-auto max-w-7xl">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 text-gray-900 leading-tight">
+                Om Kryger: Håndværk, Natur og Bæredygtighed
+            </h2>
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="relative group bg-white/30 backdrop-blur-md rounded-3xl p-6 md:p-10 shadow-2xl card-shadow overflow-hidden transition-all duration-500 ease-in-out hover:scale-105 hover:shadow-inner-xl">
+                    <div class="absolute inset-0 bg-gradient-to-br from-green-100/50 to-green-50/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl z-0"></div>
+                    <div class="relative z-10">
+                        <p class="text-lg leading-relaxed mb-6 text-gray-700">
+                            Hos Kryger forstår vi, at en have er mere end blot et udendørs rum – det er en forlængelse af dit hjem, et sted for ro, leg og fordybelse. Med dybe rødder i den danske natur og en passion for landskabsarkitektur, leverer vi skræddersyede løsninger, der forener æstetik med funktionalitet.
+                        </p>
+                        <p class="text-lg leading-relaxed mb-6 text-gray-700">
+                            Vores ekspertise spænder bredt; fra komplekse haveanlæg og præcis træpleje til smukke brolægninger og omfattende parkvedligeholdelse. Vi anvender kun de bedste materialer og metoder, altid med fokus på bæredygtighed og respekt for miljøet.
+                        </p>
+                        <p class="text-lg leading-relaxed text-gray-700">
+                            Vi lytter til dine ønsker og bidrager med vores faglighed for at sikre, at resultatet overgår dine forventninger. Kryger er din pålidelige partner, når det handler om at skabe udendørs rum, der holder i generationer.
+                        </p>
+                    </div>
+                </div>
+                <div class="relative rounded-3xl overflow-hidden shadow-2xl card-shadow transition-all duration-300 ease-in-out hover:shadow-inner">
+                    <img src="https://images.unsplash.com/photo-1549419167-734ed945a05a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Anlægsgartner arbejder i en smuk have" class="w-full h-96 object-cover object-center transform transition-transform duration-500 ease-in-out hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-green-900/40 to-transparent"></div>
+                    <p class="absolute bottom-6 left-6 text-white text-lg font-semibold drop-shadow-lg">Et grønt håndværk udført med omhu.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vores Ydelser Section -->
+    <section id="services" class="bg-secondary-gradient py-24 px-4 sm:px-8 lg:px-16 relative overflow-hidden">
+        <div class="container mx-auto max-w-7xl">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 text-gray-900 leading-tight">
+                Vores Eksklusive Ydelser
+            </h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Service Card 1 -->
+                <div class="bg-white/30 backdrop-blur-md rounded-3xl p-8 shadow-2xl card-shadow transition-all duration-300 ease-in-out hover:-translate-y-2 hover:shadow-inner-xl relative overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-br from-green-50/50 to-emerald-50/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl z-0"></div>
+                    <div class="relative z-10">
+                        <h3 class="text-2xl font-bold mb-4 text-green-800">Haveanlæg & Design</h3>
+                        <p class="text-gray-700 mb-6">Fra den første skitse til det færdige mesterværk – vi designer og anlægger haver, der afspejler din personlighed og komplementerer dit hjem.</p>
+                        <p class="text-xl font-semibold text-gray-900">Fra 7.500 DKK</p>
+                        <ul class="list-disc list-inside text-gray-600 mt-4 space-y-1">
+                            <li>Ny anlæg & omlægning</li>
+                            <li>Plantesammensætning</li>
+                            <li>Terrasse & bede</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="bg-white/30 backdrop-blur-md rounded-3xl p-8 shadow-2xl card-shadow transition-all duration-300 ease-in-out hover:-translate-y-2 hover:shadow-inner-xl relative overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-br from-green-50/50 to-emerald-50/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl z-0"></div>
+                    <div class="relative z-10">
+                        <h3 class="text-2xl font-bold mb-4 text-green-800">Træpleje & Beskæring</h3>
+                        <p class="text-gray-700 mb-6">Professionel træpleje sikrer sunde træer og en smuk krone. Vi udfører alle former for beskæring, fældning og stubfræsning med fokus på sikkerhed og træets velvære.</p>
+                        <p class="text-xl font-semibold text-gray-900">Fra 1.800 DKK</p>
+                        <ul class="list-disc list-inside text-gray-600 mt-4 space-y-1">
+                            <li>Topkapning & fældning</li>
+                            <li>Beskæring af frugttræer</li>
+                            <li>Stubfræsning</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="bg-white/30 backdrop-blur-md rounded-3xl p-8 shadow-2xl card-shadow transition-all duration-300 ease-in-out hover:-translate-y-2 hover:shadow-inner-xl relative overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-br from-green-50/50 to-emerald-50/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl z-0"></div>
+                    <div class="relative z-10">
+                        <h3 class="text-2xl font-bold mb-4 text-green-800">Brolægning & Terrasser</h3>
+                        <p class="text-gray-700 mb-6">Skab smukke og holdbare udearealer med elegant brolægning og terrasser i høj kvalitet. Vi arbejder med alle materialer fra natursten til fliser.</p>
+                        <p class="text-xl font-semibold text-gray-900">Fra 4.000 DKK</p>
+                        <ul class="list-disc list-inside text-gray-600 mt-4 space-y-1">
+                            <li>Indkørsler & stier</li>
+                            <li>Terrasser & gårdhaver</li>
+                            <li>Nedsivningsanlæg</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="bg-white/30 backdrop-blur-md rounded-3xl p-8 shadow-2xl card-shadow transition-all duration-300 ease-in-out hover:-translate-y-2 hover:shadow-inner-xl relative overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-br from-green-50/50 to-emerald-50/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl z-0"></div>
+                    <div class="relative z-10">
+                        <h3 class="text-2xl font-bold mb-4 text-green-800">Grøn Vedligeholdelse</h3>
+                        <p class="text-gray-700 mb-6">Få en velplejet have året rundt med vores skræddersyede vedligeholdelsesløsninger. Læn dig tilbage og nyd din have, vi klarer arbejdet.</p>
+                        <p class="text-xl font-semibold text-gray-900">Fra 995 DKK/måned</p>
+                        <ul class="list-disc list-inside text-gray-600 mt-4 space-y-1">
+                            <li>Hækkeklipning & græsslåning</li>
+                            <li>Ukrudtsbekæmpelse</li>
+                            <li>Sæsonpasning</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Service Card 5 -->
+                <div class="bg-white/30 backdrop-blur-md rounded-3xl p-8 shadow-2xl card-shadow transition-all duration-300 ease-in-out hover:-translate-y-2 hover:shadow-inner-xl relative overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-br from-green-50/50 to-emerald-50/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl z-0"></div>
+                    <div class="relative z-10">
+                        <h3 class="text-2xl font-bold mb-4 text-green-800">Vand i Haven</h3>
+                        <p class="text-gray-700 mb-6">Skab liv og ro med vand i din have. Vi anlægger alt fra elegante springvand til naturlige damme og regnvandsløsninger.</p>
+                        <p class="text-xl font-semibold text-gray-900">Fra 3.200 DKK</p>
+                        <ul class="list-disc list-inside text-gray-600 mt-4 space-y-1">
+                            <li>Damme & vandfald</li>
+                            <li>Springvand & fuglebade</li>
+                            <li>Vandingssystemer</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Service Card 6 -->
+                <div class="bg-white/30 backdrop-blur-md rounded-3xl p-8 shadow-2xl card-shadow transition-all duration-300 ease-in-out hover:-translate-y-2 hover:shadow-inner-xl relative overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-br from-green-50/50 to-emerald-50/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl z-0"></div>
+                    <div class="relative z-10">
+                        <h3 class="text-2xl font-bold mb-4 text-green-800">Kævler & Brænde</h3>
+                        <p class="text-gray-700 mb-6">Efter fældningsarbejde kan vi ofte tilbyde salg af kævler og brænde af høj kvalitet, klar til at varme dit hjem.</p>
+                        <p class="text-xl font-semibold text-gray-900">Kontakt for pris</p>
+                        <ul class="list-disc list-inside text-gray-600 mt-4 space-y-1">
+                            <li>Salg af brænde</li>
+                            <li>Levering til kantsten</li>
+                            <li>Bæredygtig udnyttelse</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="bg-primary-gradient py-24 px-4 sm:px-8 lg:px-16 relative overflow-hidden">
+        <div class="container mx-auto max-w-7xl text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-16 text-gray-900 leading-tight">
+                Hvad vores kunder siger
+            </h2>
+            <div class="bg-white/30 backdrop-blur-md rounded-3xl p-8 md:p-12 shadow-2xl card-shadow mx-auto max-w-3xl text-center flex flex-col items-center justify-center min-h-[300px]">
+                <div class="mb-6 text-gray-700">
+                    <svg class="w-20 h-20 mx-auto mb-4 text-green-600 opacity-75" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
+                    </svg>
+                    <p class="text-xl md:text-2xl font-medium mb-4 leading-relaxed">
+                        "Ingen specifikke anmeldelser tilgængelige endnu."
+                    </p>
+                    <p class="text-lg text-gray-600">
+                        Vi glæder os til at dele vores kunders positive oplevelser her snart!
+                    </p>
+                    <p class="text-md text-gray-500 mt-4">
+                        Din tilfredshed er vores største prioritet.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-dark-gradient py-24 px-4 sm:px-8 lg:px-16 text-white relative overflow-hidden">
+        <div class="container mx-auto max-w-7xl">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 leading-tight drop-shadow-lg">
+                Kontakt os for et Uforpligtende Tilbud
+            </h2>
+            <div class="grid md:grid-cols-2 gap-16 items-start">
+                <!-- Contact Form -->
+                <div class="bg-white/10 backdrop-blur-md rounded-3xl p-8 md:p-10 shadow-2xl card-shadow transition-all duration-300 ease-in-out hover:shadow-inner-xl">
+                    <h3 class="text-3xl font-bold mb-8 text-white">Send os en besked</h3>
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-lg font-medium mb-2 text-gray-200">Navn</label>
+                            <input type="text" id="name" name="name" class="w-full p-4 rounded-xl bg-white/20 border border-white/30 focus:ring-green-500 focus:border-green-500 text-white placeholder-gray-300 shadow-inner" placeholder="Dit fulde navn">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-lg font-medium mb-2 text-gray-200">Email</label>
+                            <input type="email" id="email" name="email" class="w-full p-4 rounded-xl bg-white/20 border border-white/30 focus:ring-green-500 focus:border-green-500 text-white placeholder-gray-300 shadow-inner" placeholder="din@email.dk">
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-lg font-medium mb-2 text-gray-200">Telefon (valgfrit)</label>
+                            <input type="tel" id="phone" name="phone" class="w-full p-4 rounded-xl bg-white/20 border border-white/30 focus:ring-green-500 focus:border-green-500 text-white placeholder-gray-300 shadow-inner" placeholder="+45 12 34 56 78">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-lg font-medium mb-2 text-gray-200">Besked</label>
+                            <textarea id="message" name="message" rows="5" class="w-full p-4 rounded-xl bg-white/20 border border-white/30 focus:ring-green-500 focus:border-green-500 text-white placeholder-gray-300 shadow-inner" placeholder="Beskriv din opgave..."></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary w-full mt-6 py-4 text-xl">
+                            Send Besked
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Info & Map -->
+                <div class="space-y-12">
+                    <div class="bg-white/10 backdrop-blur-md rounded-3xl p-8 shadow-2xl card-shadow transition-all duration-300 ease-in-out hover:shadow-inner-xl">
+                        <h3 class="text-3xl font-bold mb-6 text-white">Find os her</h3>
+                        <div class="space-y-4 text-lg text-gray-200">
+                            <p class="flex items-center">
+                                <svg class="w-6 h-6 mr-3 text-green-400" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                                Stenmarken 39, 2860 Søborg, Denmark
+                            </p>
+                            <p class="flex items-center">
+                                <svg class="w-6 h-6 mr-3 text-green-400" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.32.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.02.75-.25 1.02L6.62 10.79z"/></svg>
+                                +45 12 34 56 78
+                            </p>
+                            <p class="flex items-center">
+                                <svg class="w-6 h-6 mr-3 text-green-400" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                                info@krygerlandskab.dk
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Google Maps Embed -->
+                    <div class="relative rounded-3xl overflow-hidden shadow-2xl card-shadow transition-all duration-300 ease-in-out hover:shadow-inner">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2247.3888360562985!2d12.51352467773295!3d55.70014022201986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465253816a3a9923%3A0xc3f1406830501a4e!2sStenmarken%2039%2C%202860%20S%C3%B8borg%2C%20Denmark!5e0!3m2!1sen!2suk!4v1701350000000!5m2!1sen!2suk" 
+                            width="100%" 
+                            height="350" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy"
+                            class="rounded-3xl hover:opacity-90 transition-opacity duration-300"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12 px-4 sm:px-8 lg:px-16 text-center shadow-inner-2xl">
+        <div class="container mx-auto max-w-7xl">
+            <div class="flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
+                <div class="text-xl font-bold text-white tracking-wide">Kryger - Forest, Park & Landscape</div>
+                <div class="text-sm space-y-2">
+                    <p>Stenmarken 39, 2860 Søborg, Denmark</p>
+                    <p>&copy; 2023 Kryger. Alle rettigheder forbeholdes.</p>
+                    <p class="font-semibold text-green-300">CVR: Ikke fundet</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Privatlivspolitik</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
